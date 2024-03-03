@@ -1,0 +1,1 @@
+The "socialnetwork" application, developed in Java with a SQL Server backend and featuring a FXML graphical interface, empowers administrators with CRUD functionalities. Users can seamlessly add or remove friends, and exchange messages within their network, fostering seamless social interactions.
