@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.EditController">
+  <tabs>
+    <Tab text="USERS">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableView" layoutX="241.0" layoutY="14.0" onMousePressed="#handleSelectUser" prefHeight="290.0" prefWidth="356.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnID" prefWidth="36.40000915527344" text="ID" />
+                      <TableColumn fx:id="tableColumnFN" prefWidth="83.60003662109375" text="FIRST NAME" />
+                        <TableColumn fx:id="tableColumnLN" minWidth="0.0" prefWidth="82.79998779296875" text="LAST NAME" />
+                        <TableColumn fx:id="tableColumnU" prefWidth="76.4000244140625" text="USERNAME" />
+                        <TableColumn fx:id="tableColumnP" prefWidth="76.4000244140625" text="PASSWORD" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="21.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleAddUser" prefHeight="28.0" prefWidth="86.0" text="ADD" />
+                  <Button layoutX="142.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleDeleteUser" prefHeight="26.0" prefWidth="89.0" text="DELETE" />
+                  <Button layoutX="21.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleUpdateUser" prefHeight="25.0" prefWidth="86.0" text="UPDATE" />
+                  <Button layoutX="141.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleFindUser" prefHeight="21.0" prefWidth="91.0" text="FIND" />
+                   <TextField fx:id="TextID" layoutX="24.0" layoutY="18.0" prefHeight="38.0" prefWidth="50.0" promptText="ID" />
+                   <TextField fx:id="TextFN" layoutX="24.0" layoutY="68.0" prefHeight="38.0" prefWidth="207.0" promptText="FIRST NAME" />
+                   <TextField fx:id="TextLN" layoutX="24.0" layoutY="117.0" prefHeight="42.0" prefWidth="207.0" promptText="LAST NAME" />
+                  <Button fx:id="ExitButton" layoutX="534.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleExitButton" prefHeight="26.0" prefWidth="61.0" text="EXIT" />
+                  <Button fx:id="previousButton" layoutX="283.0" layoutY="326.0" mnemonicParsing="false" onAction="#handlePrevious" text="Previous" />
+                  <Button fx:id="nextButton" layoutX="356.0" layoutY="326.0" mnemonicParsing="false" onAction="#handleNext" prefHeight="26.0" prefWidth="68.0" text="Next" />
+                  <TextField fx:id="TextU" layoutX="24.0" layoutY="172.0" prefHeight="41.0" prefWidth="206.0" promptText="USERNAME" />
+                  <TextField fx:id="TextP" layoutX="25.0" layoutY="224.0" prefHeight="39.0" prefWidth="205.0" promptText="PASSWORD" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
